@@ -1,0 +1,289 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 125 BPMusic</title>
+
+    <!-- Google Tradutor -->
+    <meta name="google" content="notranslate">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en,es,pt',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- CSS básico -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Fundo branco */
+            color: #121212; /* Cor do texto */
+            text-align: center;
+        }
+        
+        header {
+            padding: 20px;
+            background-color: #000; /* Fundo preto */
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 10px; /* Espaçamento abaixo do menu */
+        }
+
+        .menu a {
+            color: #ffffff; /* Cor do texto branca */
+            font-size: 18px; /* Tamanho da fonte */
+            letter-spacing: 1px; /* Espaçamento entre letras */
+            margin: 0 15px; /* Espaçamento horizontal entre os links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+
+        .menu a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+
+        .saudacao {
+            font-size: 32px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        /* Estilos para a logo grande */
+        .logo-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 350px; /* Aumenta o tamanho da logo */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 20px;
+            text-align: left; /* Alinha o texto à esquerda */
+            margin-left: 20px; /* Ajuste para mover a seção um pouco para a esquerda */
+        }
+        
+        /* Estilos para a lista de serviços */
+        .servicos-lista, .plugins-lista {
+            margin-left: 40px; /* Ajuste a margem para mover a lista para a esquerda */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px; /* Espaçamento entre itens do portfólio */
+        }
+
+        /* Estilo para o botão Saiba Mais */
+        .botao-saiba-mais {
+            background-color: green; /* Cor de fundo verde */
+            color: white; /* Cor do texto branca */
+            border: none; /* Remove bordas */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+            font-size: 16px; /* Tamanho da fonte */
+            margin-top: 10px; /* Espaçamento acima do botão */
+            border-radius: 5px; /* Borda arredondada */
+            transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+        }
+
+        .botao-saiba-mais:hover {
+            background-color: darkgreen; /* Cor de fundo ao passar o mouse */
+        }
+
+        /* Estilo para formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #121212;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seletor de idiomas -->
+    <div class="language-selector">
+        <div id="google_translate_element"></div>
+    </div>
+
+    <!-- Cabeçalho com menu de navegação -->
+    <header>
+        <div class="menu">
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#blog">Blog</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </header>
+
+    <!-- Container com logo e saudação -->
+    <div class="logo-container">
+        <img src="Image.svg" alt="Logo do Project 125 BPMusic" style="
+    width: 428px;
+    height: 280px;
+    padding-right: 0px;
+    margin-right: 100px;
+    margin-left: 730px;
+"> <!-- Logo grande -->
+        <p class="saudacao">Bem-vindo ao Project 125 BPMusic</p>
+    </div>
+
+    <main>
+        <section>
+            <p>Aqui você encontra os melhores conteúdos de música eletrônica/comercial/underground afins e serviços especiais de mixagem/masterização.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Oferecemos os seguintes serviços:</p>
+            <ul class="servicos-lista" style="
+    margin-left: 0px;
+    padding-left: 20px;
+">
+                <li>Mixagem</li>
+                <li>Masterização</li>
+                <li>Pacote Mix + Master</li>
+            </ul>
+            <button class="botao-saiba-mais">Saiba Mais</button>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Veja alguns dos nossos trabalhos anteriores:</p>
+
+            <div class="portfolio-item">
+                <h3>Faixa Não Mixada/Masterizada</h3>
+                <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2110287562/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless="">
+                    <a href="https://project125bpmusic.bandcamp.com/track/adeva-in-and-out-of-my-life-old-deep-house-2k24-original-mix-radio-edit-no-mix-master">Adeva - In And Out Of My Life (Old Deep House 2k24 ) (Original Mix RADIO EDIT) (NO MIX-MASTER) by Project 125 BPMusic</a>
+                </iframe>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Faixa Mixada/Masterizada</h3>
+                <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=1496446796/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless="">
+                    <a href="https://project125bpmusic.bandcamp.com/track/adeva-in-and-out-of-my-life-old-deep-house-2k24-edit-original-mix">Adeva - In And Out of My Life (Old Deep house 2k24 EDIT) (ORIGINAL MIX ) by Project 125 BPMusic</a>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Informações sobre o mercado da música, lançamentos de gravadoras e artistas, remixes, músicas novas, plugins gratuitos e pagos para mixagem e masterização, e eventos de música eletrônica e festivais ao redor do mundo.</p>
+        
+            <article>
+                <h3>Lançamentos de Artistas</h3>
+                <p>Confira os lançamentos mais recentes de artistas no cenário da música.</p>
+                <img src="_062c182d-c810-4455-8cb6-e44d09371572.jpeg" alt="Lançamento de Artista" style="display: block; margin-bottom: 10px;"> <!-- Espaçamento abaixo da imagem -->
+                <button class="botao-saiba-mais" style="background-color: green; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; margin-top: 10px; border-radius: 5px; transition: background-color 0.3s;">Saiba Mais</button>
+            </article>
+        
+            <article>
+                <h3>Plugins Gratuitos</h3>
+                <p>Uma lista de plugins gratuitos para mixagem e masterização.</p>
+                <button class="botao-saiba-mais" style="background-color: green; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; margin-top: 10px; border-radius: 5px; transition: background-color 0.3s;">Saiba Mais</button>
+            </article>
+        
+            <article>
+                <h3>Festivais de Música</h3>
+                <p>Fique por dentro dos próximos festivais ao redor do mundo.</p>
+                <img src="_03e69f96-5490-42f0-80ef-a09f81648445.jpeg" alt="Festival de Músicas" style="display: block; margin-bottom: 10px;"> <!-- Espaçamento abaixo da imagem -->
+                <button class="botao-saiba-mais" style="background-color: green; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; margin-top: 10px; border-radius: 5px; transition: background-color 0.3s;">Saiba Mais</button>
+            </article>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required="">
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required="">
+        
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required=""></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <style>
+            /* Estilo para o blog */
+            #blog {
+                margin-bottom: 20px; /* Espaço entre seções */
+            }
+        
+            article {
+                margin-bottom: 20px; /* Espaçamento entre os artigos */
+            }
+        
+            img {
+                display: block; /* Faz a imagem ocupar toda a largura */
+                margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+            }
+        
+            .botao-saiba-mais {
+                background-color: green;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 10px; /* Espaço acima do botão */
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+        
+            .botao-saiba-mais:hover {
+                background-color: darkgreen; /* Altera a cor ao passar o mouse */
+            }
+        </style>
+        
+    <footer>
+        <p>© 2024 Project 125 BPMusic. Todos os direitos reservados.</p>
+    </footer>
+
+
+
+</main></body></html>
