@@ -22,7 +22,7 @@
  <!-- Google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3462930941969220" crossorigin="anonymous"></script>
     
-   /* CSS Reset */
+ /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -32,15 +32,15 @@
 /* Estilos Globais */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #121212;
+  background-color: #ffffff; /* Fundo branco */
+  color: #121212; /* Cor do texto */
   text-align: center;
   line-height: 1.6;
 }
 
 header {
   padding: 20px;
-  background-color: #000;
+  background-color: #000; /* Fundo preto */
 }
 
 .menu {
@@ -49,17 +49,16 @@ header {
 }
 
 .menu a {
-  color: #ffffff;
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin: 0 15px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5em;
+  color: #ffffff; /* Cor do texto branca */
+  font-size: 18px; /* Tamanho da fonte */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  margin: 0 15px; /* Espaçamento horizontal entre os links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  padding: 0.5em 1em; /* Espaçamento interno */
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
 .saudacao {
@@ -75,29 +74,40 @@ header {
 }
 
 .logo-container img {
-  width: 350px;
-  height: auto;
-  border-radius: 5px;
+  width: 350px; /* Aumenta o tamanho da logo */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px; /* Bordas arredondadas */
 }
 
 main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
-  text-align: left;
-  margin-left: 20px;
+/* Layout Flexível */
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
-/* Listas */
+section {
+  flex: 1 1 300px; /* Largura mínima de 300px, expande conforme necessário */
+  margin-bottom: 20px;
+  text-align: left; /* Alinha o texto à esquerda */
+  background-color: #f4f4f4; /* Fundo claro para seções */
+  padding: 20px;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para a lista de serviços */
 .servicos-lista, .plugins-lista {
-  margin-left: 40px;
+  margin-left: 20px; /* Ajuste a margem para mover a lista para a esquerda */
 }
 
 /* Estilo do Portfólio */
 .portfolio-item {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Espaçamento entre itens do portfólio */
 }
 
 /* Estilo do Botão Saiba Mais */
@@ -121,8 +131,8 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin: 0 auto;
+  width: 300px; /* Largura padrão do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
 }
 
 form label {
@@ -151,119 +161,44 @@ form button:hover {
   background-color: #000;
 }
 
-/* Layout Responsivo */
-.main-content {
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.section {
-  flex: 1 1 280px;
-  background: #f4f4f4;
-  padding: 1em;
-  border-radius: 5px;
-}
-
 /* Media Queries */
+@media (max-width: 768px) {
+  .menu a {
+    display: block; /* Empilha os links do menu */
+    margin: 10px 0; /* Espaçamento vertical */
+  }
 
-/* Para Dispositivos Muito Pequenos */
+  .logo-container img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+  }
+
+  form {
+    width: 90%; /* Ajusta a largura do formulário */
+  }
+
+  section {
+    margin-left: 0; /* Remove o espaço à esquerda nas seções */
+  }
+}
+
 @media (max-width: 400px) {
-  header, footer {
-    font-size: 0.8em;
-    padding: 0.5em;
+  body {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte */
   }
 
   .menu a {
-    padding: 0.3em;
-    font-size: 0.8em;
+    font-size: 0.9em; /* Tamanho menor para o menu */
   }
 
-  .section {
-    padding: 0.6em;
-    font-size: 0.9em;
-  }
-}
-
-/* Para Dispositivos Pequenos */
-@media (min-width: 400px) and (max-width: 600px) {
-  body {
-    font-size: 0.9em;
-  }
-
-  .menu a {
-    font-size: 0.9em;
-  }
-
-  .section {
-    font-size: 1em;
-    padding: 0.8em;
-  }
-}
-
-/* Para Tablets */
-@media (min-width: 600px) and (max-width: 900px) {
-  body {
-    font-size: 1em;
-  }
-
-  .section {
-    padding: 1em;
-    font-size: 1.1em;
-  }
-}
-
-/* Para Telas Médias */
-@media (min-width: 900px) and (max-width: 1200px) {
-  body {
-    font-size: 1.1em;
+  .logo-container img {
+    width: 80%; /* Imagem ocupa 80% da largura */
   }
 
   .main-content {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .section {
-    padding: 1.2em;
-    font-size: 1.2em;
+    flex-direction: column; /* Empilha os itens em uma coluna */
   }
 }
 
-/* Para Telas Grandes */
-@media (min-width: 1200px) and (max-width: 1600px) {
-  body {
-    font-size: 1.2em;
-  }
-
-  .main-content {
-    max-width: 75%;
-    margin: 0 auto;
-  }
-
-  .section {
-    padding: 1.5em;
-    font-size: 1.3em;
-  }
-}
-
-/* Para Telas Muito Grandes */
-@media (min-width: 1600px) {
-  body {
-    font-size: 1.3em;
-  }
-
-  .main-content {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-
-  .section {
-    padding: 1.8em;
-    font-size: 1.4em;
-  }
-}
 
     </style>
 </head>
