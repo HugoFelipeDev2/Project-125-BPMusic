@@ -22,148 +22,249 @@
  <!-- Google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3462930941969220" crossorigin="anonymous"></script>
     
-    <!-- CSS básico -->
-    <style>
-        body {
-            font-family: Arial, sans-serif; /* Estilo geral da fonte */
-            background-color: #ffffff; /* Fundo branco */
-            color: #121212; /* Cor do texto */
-            text-align: center; /* Alinhamento do texto */
-        }
+   /* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        header {
-            padding: 20px;
-            background-color: #000; /* Fundo preto */
-        }
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #121212;
+  text-align: center;
+  line-height: 1.6;
+}
 
-        .menu {
-            text-align: center;
-            margin-bottom: 10px; /* Espaçamento abaixo do menu */
-        }
+header {
+  padding: 20px;
+  background-color: #000;
+}
 
-        .menu a {
-            color: #ffffff; /* Cor do texto branca */
-            font-size: 18px; /* Tamanho da fonte */
-            letter-spacing: 1px; /* Espaçamento entre letras */
-            margin: 0 15px; /* Espaçamento horizontal entre os links */
-            text-decoration: none; /* Remove o sublinhado dos links */
-        }
+.menu {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-        .menu a:hover {
-            text-decoration: underline; /* Sublinha ao passar o mouse */
-        }
+.menu a {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+}
 
-        .saudacao {
-            font-size: 32px;
-            margin-top: 10px;
-            position: relative;
-        }
+.menu a:hover {
+  text-decoration: underline;
+}
 
-        /* Estilos para a logo grande */
-        .logo-container {
-            margin-top: 40px;
-            text-align: center;
-        }
+.saudacao {
+  font-size: 32px;
+  margin-top: 10px;
+  position: relative;
+}
 
-        .logo-container img {
-            width: 350px; /* Aumenta o tamanho da logo */
-            height: auto; /* Mantém a proporção da imagem */
-        }
+/* Estilos para a logo grande */
+.logo-container {
+  margin-top: 40px;
+  text-align: center;
+}
 
-        main {
-            padding: 20px;
-        }
+.logo-container img {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+}
 
-        section {
-            margin-bottom: 20px;
-            text-align: left; /* Alinha o texto à esquerda */
-            margin-left: 20px; /* Ajuste para mover a seção um pouco para a esquerda */
-        }
+main {
+  padding: 20px;
+}
 
-        /* Estilos para a lista de serviços */
-        .servicos-lista, .plugins-lista {
-            margin-left: 40px; /* Ajuste a margem para mover a lista para a esquerda */
-        }
+section {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
+/* Listas */
+.servicos-lista, .plugins-lista {
+  margin-left: 40px;
+}
 
-        .portfolio-item {
-            margin-bottom: 20px; /* Espaçamento entre itens do portfólio */
-        }
+/* Estilo do Portfólio */
+.portfolio-item {
+  margin-bottom: 20px;
+}
 
-        /* Estilo para o botão Saiba Mais */
-        .botao-saiba-mais {
-            background-color: green; /* Cor de fundo verde */
-            color: white; /* Cor do texto branca */
-            border: none; /* Remove bordas */
-            padding: 10px 20px; /* Espaçamento interno do botão */
-            cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
-            font-size: 16px; /* Tamanho da fonte */
-            margin-top: 10px; /* Espaçamento acima do botão */
-            border-radius: 5px; /* Borda arredondada */
-            transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-        }
+/* Estilo do Botão Saiba Mais */
+.botao-saiba-mais {
+  background-color: green; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove bordas */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-top: 10px; /* Espaçamento acima do botão */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
 
-        .botao-saiba-mais:hover {
-            background-color: darkgreen; /* Cor de fundo ao passar o mouse */
-        }
+.botao-saiba-mais:hover {
+  background-color: darkgreen; /* Cor de fundo ao passar o mouse */
+}
 
-        /* Estilo para formulário de contato */
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 300px; /* Largura padrão do formulário */
-            margin: 0 auto; /* Centraliza o formulário */
-        }
+/* Formulário de Contato */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
 
-        form label {
-            margin-top: 10px;
-        }
+form label {
+  margin-top: 10px;
+}
 
-        form input, form textarea {
-            padding: 10px;
-            margin-top: 5px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-        form button {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #121212;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #121212;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-        form button:hover {
-            background-color: #000;
-        }
+form button:hover {
+  background-color: #000;
+}
 
-        /* Para telas menores que 768px */
-        @media (max-width: 768px) {
-            .menu a {
-                display: block; /* Empilha os links do menu */
-                margin: 10px 0; /* Espaçamento vertical */
-            }
+/* Layout Responsivo */
+.main-content {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
 
-            .logo-container img {
-                width: 100%; /* Imagem ocupa toda a largura disponível */
-            }
+.section {
+  flex: 1 1 280px;
+  background: #f4f4f4;
+  padding: 1em;
+  border-radius: 5px;
+}
 
-            form {
-                width: 90%; /* Ajusta a largura do formulário */
-            }
+/* Media Queries */
 
-            section {
-                margin-left: 0; /* Remove o espaço à esquerda nas seções */
-            }
-        }
+/* Para Dispositivos Muito Pequenos */
+@media (max-width: 400px) {
+  header, footer {
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+
+  .menu a {
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
+
+  .section {
+    padding: 0.6em;
+    font-size: 0.9em;
+  }
+}
+
+/* Para Dispositivos Pequenos */
+@media (min-width: 400px) and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .menu a {
+    font-size: 0.9em;
+  }
+
+  .section {
+    font-size: 1em;
+    padding: 0.8em;
+  }
+}
+
+/* Para Tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 1em;
+  }
+
+  .section {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+}
+
+/* Para Telas Médias */
+@media (min-width: 900px) and (max-width: 1200px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  .main-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 1.2em;
+    font-size: 1.2em;
+  }
+}
+
+/* Para Telas Grandes */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .main-content {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 1.5em;
+    font-size: 1.3em;
+  }
+}
+
+/* Para Telas Muito Grandes */
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  .main-content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 1.8em;
+    font-size: 1.4em;
+  }
+}
+
     </style>
 </head>
 <body>
